@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "AdminFilter")
-public class AdminFilter implements Filter {
+@WebFilter(filterName = "UserFilter")
+public class UserFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
 
@@ -23,8 +23,8 @@ public class AdminFilter implements Filter {
 
         //TODO
         if (httpSession.getAttribute("username") != null
-                && httpSession.getAttribute("role").equals(UserRole.ADMIN_ROLE.getValue())) {
-
+                && httpSession.getAttribute("role").equals(UserRole.USER_ROLE.getValue())) {
+            
             chain.doFilter(request, response);
         } else {
             httpServletRequest.getRequestDispatcher("/login.jsp").forward(request, response);

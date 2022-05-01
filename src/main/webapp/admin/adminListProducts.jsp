@@ -11,8 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-    <a href="adminNews.jsp">Admin News</a> <a href="account?action=logout">Logout</a>
+    <a href="admin/adminNews.jsp">Admin News</a>
+    <a href="account?action=logout">Logout</a>
     <br>
-    <h1>List product - ${message}</h1>
+    <h1>List product - Admin</h1>
 </body>
 </html>

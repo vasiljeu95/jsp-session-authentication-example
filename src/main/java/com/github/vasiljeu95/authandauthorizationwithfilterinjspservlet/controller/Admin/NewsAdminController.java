@@ -11,6 +11,6 @@ import java.io.IOException;
 public class NewsAdminController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("adminNews.jsp").forward(request, response);
+        request.getRequestDispatcher("admin/adminNews.jsp").forward(request, response);
     }
 }

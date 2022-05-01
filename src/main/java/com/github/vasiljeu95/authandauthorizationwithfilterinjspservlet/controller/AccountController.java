@@ -1,5 +1,7 @@
 package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.controller;
 
+import com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.model.UserRole;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -28,10 +30,13 @@ public class AccountController extends HttpServlet {
         if (username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("123")) {
             HttpSession httpSession = request.getSession();
             httpSession.setAttribute("username", username);
-            response.sendRedirect(getServletContext().getContextPath() + "/admin/adminListProducts.jsp");
+            httpSession.setAttribute("role", UserRole.ADMIN_ROLE.getValue());
+//            response.sendRedirect(getServletContext().getContextPath() + "/admin/adminListProducts.jsp");
+            request.getRequestDispatcher("/admin/adminListProducts.jsp").forward(request, response);
         } else if (username.equalsIgnoreCase("user") && password.equalsIgnoreCase("123")) {
             HttpSession httpSession = request.getSession();
             httpSession.setAttribute("username", username);
+            httpSession.setAttribute("role", UserRole.USER_ROLE.getValue());
             response.sendRedirect(getServletContext().getContextPath() + "/user/userListProducts.jsp");
         } else {
             request.setAttribute("message", "Account's Invalid");
