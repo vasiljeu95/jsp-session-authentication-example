@@ -1,4 +1,4 @@
-package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.controller;
+package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.servlet;
 
 import com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.model.UserRole;
 

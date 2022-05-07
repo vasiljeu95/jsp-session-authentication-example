@@ -1,4 +1,4 @@
-package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.controller.servlet;
+package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.servlet.listener;
 
 import com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.dao.ServiceDAO;
 import com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.model.User;
@@ -8,8 +8,6 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-import java.awt.event.ContainerEvent;
-import java.awt.event.ContainerListener;
 import java.util.concurrent.atomic.AtomicReference;
 
 @WebListener()

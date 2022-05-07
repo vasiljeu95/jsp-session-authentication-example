@@ -1,4 +1,4 @@
-package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.controller.servlet;
+package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.servlet;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

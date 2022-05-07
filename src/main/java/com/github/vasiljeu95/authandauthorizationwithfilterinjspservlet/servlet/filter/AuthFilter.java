@@ -1,4 +1,4 @@
-package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.filter;
+package com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.servlet.filter;
 
 import com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.dao.ServiceDAO;
 import com.github.vasiljeu95.authandauthorizationwithfilterinjspservlet.model.UserRole;
