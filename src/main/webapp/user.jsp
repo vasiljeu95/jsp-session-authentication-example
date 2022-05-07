@@ -1,19 +1,17 @@
 <%--
   Created by IntelliJ IDEA.
   User: stepanvasilyeu
-  Date: 30.04.22
-  Time: 19:03
+  Date: 1.05.22
+  Time: 14:26
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>User</title>
 </head>
 <body>
-    <a href="admin/adminNews.jsp">Admin News</a>
-    <a href="account?action=logout">Logout</a>
-    <br>
-    <h1>List product - Admin</h1>
+    <h1>Hello USER!</h1>
+    <a href="<c:url value='/logout' />">Logout</a>
 </body>
 </html>
